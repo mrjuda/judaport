@@ -27,7 +27,6 @@ header a {
 .menu-hamb,
 .menu-mobile-list li a {
   color: #fff;
-  /* padding-right: 1rem; */
   font-size: 2rem;
   z-index: 5;
 }
