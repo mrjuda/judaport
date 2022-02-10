@@ -351,6 +351,10 @@ form p {
   cursor: pointer;
 }
 
+button {
+  background-color: #fff;
+}
+
 form .cta-button {
   text-decoration: none;
   color: #0c3cb6;
