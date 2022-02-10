@@ -10,6 +10,10 @@ header a {
   line-height: 20px;
 }
 
+.blur {
+  filter: blur(2px);
+}
+
 #name-logo {
   color: #0f27ff !important;
   font-weight: 700;
@@ -150,6 +154,22 @@ header img {
   height: 25px;
 }
 
+.name {
+  animation: 1s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .main h1,
 .main h2,
 .portfolio h2,
@@ -159,6 +179,22 @@ header img {
   line-height: 48px;
   margin-top: 15px;
   margin-bottom: 10px;
+}
+
+.main h1 {
+  animation: 1s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 form p {
@@ -214,4 +250,474 @@ form p {
 
 .socials .icon-bar img {
   height: 25px;
+}
+
+.portfolio {
+  display: grid;
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  border-radius: 20px;
+  background: #fff;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 8% 8%;
+}
+
+.portfolio .card img {
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  color: #575757;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.categories .canopy {
+  color: #575757;
+}
+
+.keyword {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.keyword li {
+  background-color: #ebebff;
+  border-radius: 10%;
+  color: #0f27ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.categories li {
+  padding-right: 5px;
+}
+
+.about2 li {
+  border-radius: 4%;
+  color: #444;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 1% 4%;
+}
+
+.keyword li:hover {
+  background-color: #0f27ff;
+  color: #fff;
+}
+
+.about2 ul {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 1% 1%;
+}
+
+.about-elements {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.cta-button {
+  color: #0c3cb6;
+  border: 1px solid #0f27ff;
+  width: max-content;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+button {
+  background-color: #fff;
+}
+
+form .cta-button {
+  text-decoration: none;
+  color: #0c3cb6;
+  border: 1px solid #396df2;
+  width: max-content;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0c3cb6;
+  color: #fff;
+}
+
+.about1 {
+  margin: 2%;
+}
+
+.about2 {
+  border-radius: 1px 100px 1px 1px;
+  margin: 2%;
+}
+
+.about2 details {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: transparent transparent #ddd transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+summary::before {
+  content: '>';
+  font-size: 29px;
+  border-width: 0.1rem;
+  border-style: groove;
+  border-color: transparent transparent transparent transparent;
+  position: absolute;
+  top: 1rem;
+  left: 90%;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.languages .img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1% 5%;
+  background: #f7f7f9;
+  border-radius: 10px;
+}
+
+.img-container h3 {
+  padding: 1% 5%;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f27ff url("../images/bg-main-desktop.png") no-repeat;
+  border-radius: 100px 1px 1px 1px;
+  background-size: cover;
+}
+
+.contact .content {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.contact form {
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+}
+
+.contact h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact h3 {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.contact p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+form input,
+form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: none;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 15px;
+}
+
+form textarea {
+  resize: none;
+  height: 120px;
+  padding: 8px 3px;
+  padding-left: 15px;
+}
+
+form > ul > li > input,
+form > ul > li > textarea {
+  width: 100%;
+}
+
+form .cta-button:hover {
+  background: #0c3cb6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact .black-dash {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: 30px 30%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* ##### DESKTOP DESIGN ##### */
+
+/* ##### DESKTOP DESIGN ##### */
+
+/* ##### DESKTOP DESIGN ##### */
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 3% 10%;
+    align-items: center;
+  }
+
+  header .logo {
+    display: none;
+  }
+
+  header a {
+    color: #172b4d;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.6s, font-size 0.6s;
+  }
+
+  .menu-desktop a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+  }
+
+  header a:hover {
+    font-weight: 700;
+    border-radius: 2px;
+    color: #394dfd;
+    font-size: 19px;
+  }
+
+  .img-container img {
+    width: 48px;
+    height: auto;
+    padding: 5% 5%;
+    margin: 0 0;
+    border-radius: 50%;
+  }
+
+  .menu-desktop .menu-hamb img {
+    display: none;
+  }
+
+  .menu-mobile-container {
+    display: none;
+  }
+
+  .menu-desktop {
+    color: #344563;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .menu-desktop .menu-desktop-item {
+    display: flex;
+  }
+
+  .menu-mobile-bg {
+    display: none;
+  }
+
+  .main {
+    background: #fff url("../images/bg-main-desktop.png") no-repeat;
+    background-size: 100%;
+  }
+
+  .main-elements {
+    padding: 8% 25%;
+  }
+
+  .main-elements .content h1,
+  .main > h2,
+  .portfolio > h2,
+  .about > h2 {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    display: flex;
+    padding: 1% 2%;
+  }
+
+  .card-img,
+  .card-text {
+    padding: 4% 1%;
+    margin: 0 0;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  #card1 {
+    flex-direction: row;
+  }
+
+  #card2 {
+    flex-direction: row-reverse;
+  }
+
+  #card3 {
+    flex-direction: row;
+  }
+
+  #card4 {
+    flex-direction: row-reverse;
+  }
+
+  .about {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .about-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .about1 {
+    flex: 40%;
+  }
+
+  .about2 {
+    flex-direction: column;
+    flex: 45%;
+  }
+
+  .about2 ul {
+    padding-left: 0;
+  }
+
+  .about2 li {
+    margin: 1%;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .languages .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 100px;
+    align-items: flex-start;
+    padding: 5% 5%;
+    background: #f7f7f9;
+    border-radius: 10px;
+  }
+
+  .img-container h3 {
+    padding: 1% 5%;
+    margin-top: 8%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contact {
+    background: #0f27ff url("../images/bg-contact-desktop.png") no-repeat;
+    background-size: 100%;
+    border-radius: 100px 1px 1px 1px;
+    padding: 2% 25%;
+    justify-content: center;
+  }
+
+  .contact li {
+    text-align: center;
+  }
+
+  .contact .black-dash {
+    display: none;
+  }
 }

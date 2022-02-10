@@ -6,7 +6,7 @@
 - CSS
 
 ## Live Demo
-- Live version: NO LIVE VERSION YET
+- Live version: [mrjuda.github.io/judaport](https://mrjuda.github.io/judaport)
 
 ## Authors
 Judá F Teixeira
@@ -17,4 +17,4 @@ Judá F Teixeira
 Contributions, issues and feature requests are very welcome!
 
 ## 📝License
-This project is [MIT](https://github.com/mrjuda/w1d3/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/mrjuda/judaport/blob/main/LICENSE) licensed.
