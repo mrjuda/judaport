@@ -704,20 +704,3 @@ form .cta-button:hover {
     font-size: 15px;
     line-height: 20px;
   }
-
-  .contact {
-    background: #0f27ff url("../images/bg-contact-desktop.png") no-repeat;
-    background-size: 100%;
-    border-radius: 100px 1px 1px 1px;
-    padding: 2% 25%;
-    justify-content: center;
-  }
-
-  .contact li {
-    text-align: center;
-  }
-
-  .contact .black-dash {
-    display: none;
-  }
-}
