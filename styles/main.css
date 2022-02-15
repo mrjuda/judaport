@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -110,10 +110,10 @@ body {
   background-color: rgb(243, 243, 243);
   display: grid;
   grid-template-areas:
-    'header'
-    'main'
-    'portfolio'
-    'about';
+    "header"
+    "main"
+    "portfolio"
+    "about";
 }
 
 .main-elements {
@@ -402,7 +402,7 @@ summary {
 }
 
 summary::before {
-  content: '>';
+  content: ">";
   font-size: 29px;
   border-width: 0.1rem;
   border-style: groove;
@@ -704,3 +704,20 @@ form .cta-button:hover {
     font-size: 15px;
     line-height: 20px;
   }
+
+  .contact {
+    background: #0f27ff url("../images/bg-contact-desktop.png") no-repeat;
+    background-size: 100%;
+    border-radius: 100px 1px 1px 1px;
+    padding: 2% 25%;
+    justify-content: center;
+  }
+
+  .contact li {
+    text-align: center;
+  }
+
+  .contact .black-dash {
+    display: none;
+  }
+}
