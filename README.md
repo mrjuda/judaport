@@ -9,14 +9,10 @@
 
 ## Live Demo
 - Live version: [mrjuda.github.io/judaport](https://mrjuda.github.io/judaport)
-- Desktop Version:
-https://user-images.githubusercontent.com/86697265/154769388-f5b94959-c494-47e5-b507-acee642f1548.mp4
-
-- Mobile version:
-https://user-images.githubusercontent.com/86697265/154769424-c2d0a10e-f061-4252-ac32-821528463087.mp4
-
-
-
+> Mobile version:
+[![Preview](./gifs/judaport-mobile-m1w2d5.gif)](./gifs/judaport-mobile-m1w2d5.gif)
+> Desktop version:
+[![Preview](./gifs/judaport-desktop-m1w2d5.gif)](./gifs/judaport-desktop-m1w2d5.gif)
 
 ## Authors
 **Judá F Teixeira**
