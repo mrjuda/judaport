@@ -154,22 +154,6 @@ header img {
   height: 25px;
 }
 
-.name {
-  animation: 1s slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 .main h1,
 .main h2,
 .portfolio h2,
@@ -179,22 +163,6 @@ header img {
   line-height: 48px;
   margin-top: 15px;
   margin-bottom: 10px;
-}
-
-.main h1 {
-  animation: 1s slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 
 form p {
