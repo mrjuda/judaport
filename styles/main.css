@@ -629,6 +629,11 @@ form .cta-button:hover {
     margin-bottom: 10px;
   }
 
+  .portfolio {
+    width: 80%;
+    justify-self: center;
+  }
+
   .card {
     display: flex;
     padding: 1% 2%;
