@@ -181,6 +181,22 @@ header img {
   }
 }
 
+.socials h2 {
+  animation: 2s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .name {
   animation: 1s slidein;
 }
