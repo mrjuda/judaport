@@ -165,6 +165,38 @@ header img {
   margin-bottom: 10px;
 }
 
+.main h1 {
+  animation: 1s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.name {
+  animation: 1s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 form p {
   color: #ebebff;
   text-align: left;
@@ -194,6 +226,19 @@ form p {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 1px;
+  animation: 2s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .socials .icon-bar {
