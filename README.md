@@ -9,10 +9,10 @@
 
 ## Live Demo
 - Live version: [mrjuda.github.io/judaport](https://mrjuda.github.io/judaport)
-> Mobile version:
-[![Preview](./gifs/judaport-mobile-m1w2d5.gif)](./gifs/judaport-mobile-m1w2d5.gif)
-> Desktop version:
-[![Preview](./gifs/judaport-desktop-m1w2d5.gif)](./gifs/judaport-desktop-m1w2d5.gif)
+- Mobile version:
+> [![Preview](./gifs/judaport-mobile-m1w2d5.gif)](./gifs/judaport-mobile-m1w2d5.gif)
+- Desktop version:
+> [![Preview](./gifs/judaport-desktop-m1w2d5.gif)](./gifs/judaport-desktop-m1w2d5.gif)
 
 ## Authors
 **Judá F Teixeira**
