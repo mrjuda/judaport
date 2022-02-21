@@ -8,7 +8,6 @@
 - CSS
 
 ## Live Demo
-- Live version: [mrjuda.github.io/judaport](https://mrjuda.github.io/judaport)
 - Mobile version:
 > [![Preview](./gifs/judaport-mobile-m1w2d5.gif)](./gifs/judaport-mobile-m1w2d5.gif)
 - Desktop version:
