@@ -1,13 +1,14 @@
 function loadJS(url){
   let script = document.createElement('script');
   script.src = url;
+  script.async = true;
   document.body.appendChild(script);
 }
 
 loadJS('scripts/jtScript.js');
 
 
-// The regular JS document
+// The main.js document
 
 const body = document.querySelector('body');
 const menuHamb = document.querySelector('.menu-hamb');

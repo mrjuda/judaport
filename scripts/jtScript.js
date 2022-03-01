@@ -8,4 +8,29 @@ menu.appendChild(li);
 li = document.createElement('li');
 li.textContent = 'About Us';
 
+
 menu.appendChild(li);
+
+
+let div = document.querySelector('#content');
+div.classList.add('socials');
+
+// Example 1
+let btn1 = document.querySelector('#btn1');
+function display(){
+  alert('It was clicked! (1)');
+}
+btn1.addEventListener('click', display);
+
+// Example 2 (shorter)
+let btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', function(){
+  alert('It was clicked! (2)')
+});
+
+let empty = {};
+
+let person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
