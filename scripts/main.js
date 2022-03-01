@@ -1,3 +1,16 @@
+let li = document.createElement('li');
+
+// select the ul menu element
+const menu = document.querySelector('#menuDom');
+li.textContent = 'Products';
+menu.appendChild(li);
+
+li = document.createElement('li');
+li.textContent = 'About Us';
+
+menu.appendChild(li);
+
+
 const body = document.querySelector('body');
 const menuHamb = document.querySelector('.menu-hamb');
 const menuX = document.querySelector('.menu-x');
@@ -53,3 +66,4 @@ contactBtn.addEventListener('click', () => {
   menuX.style.display = 'none';
   menuMobileBg.style.display = 'none';
 });
+
