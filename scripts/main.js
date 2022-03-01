@@ -1,15 +1,13 @@
-let li = document.createElement('li');
+function loadJS(url){
+  let script = document.createElement('script');
+  script.src = url;
+  document.body.appendChild(script);
+}
 
-// select the ul menu element
-const menu = document.querySelector('#menuDom');
-li.textContent = 'Products';
-menu.appendChild(li);
+loadJS('scripts/jtScript.js');
 
-li = document.createElement('li');
-li.textContent = 'About Us';
 
-menu.appendChild(li);
-
+// The regular JS document
 
 const body = document.querySelector('body');
 const menuHamb = document.querySelector('.menu-hamb');
