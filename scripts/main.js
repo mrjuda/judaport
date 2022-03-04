@@ -7,3 +7,5 @@ function loadJS(url) {
 
 loadJS('scripts/jtScript.js');
 loadJS('scripts/mobileMenu.js');
+loadJS('script/dynamicCards.js');
+loadJS('script/popup.js');
