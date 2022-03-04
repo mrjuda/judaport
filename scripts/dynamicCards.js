@@ -147,7 +147,7 @@ function newPortfolioCard(card) {
 const generateCard = cardData.map((card, key) => {
   const cardContainer = document.createElement('div');
   cardContainer.className = 'card';
-  if (key%2 === 1) {
+  if (key % 2 === 1) {
     cardContainer.classList.add('odd-card');
   }
   cardContainer.innerHTML = newPortfolioCard(card);
@@ -155,7 +155,7 @@ const generateCard = cardData.map((card, key) => {
 });
 
 const portfolio = document.getElementById('Portfolio');
-let cardQtt = generateCard.length;
-for (let i = 0; i < cardQtt; i++) {
+const cardQtt = generateCard.length;
+for (let i = 0; i < cardQtt; i += 1) {
   portfolio.appendChild(generateCard[i]);
 }
