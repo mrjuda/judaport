@@ -1,13 +1,26 @@
 // popup.js
 
-let li = document.createElement('li');
+// select the section 'Dynamics'
+// index.html >> section class='dynamics' / id='Dynamics'
+const dynamics = document.querySelector('#Dynamics');
+// apply class 'portfolio' to the section 'dynamics'
+// so it assumes the appearance of the outer card box
+dynamics.className = 'portfolio';
+// dynamics.className = 'hide';
 
-// select the ul menu element
-const menu = document.querySelector('#menuDom');
-li.textContent = 'Proddducts';
-menu.appendChild(li);
+// Create a element (div) INSIDE the the dynamics box
+let cardBox = document.createElement('div');
+// apply class 'card' so it assumes the card apearance
+cardBox.className = 'card';
+// create content (h2 title + button)
+let title2 = document.createElement('h2'); // h2
+title2.textContent = 'This is a CardBox';
+let callModal = document.createElement('button'); // button
+callModal.className = 'cta-button';
+callModal.textContent = 'OPEN MODAL';
 
-li = document.createElement('li');
-li.textContent = 'About Us';
+// append it to the div
+cardBox.appendChild(title2);
+cardBox.appendChild(callModal);
 
-menu.appendChild(li);
+dynamics.appendChild(cardBox);
