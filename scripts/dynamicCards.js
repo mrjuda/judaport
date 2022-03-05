@@ -17,7 +17,7 @@ const cardData = [
     reads; no accounts or sign-ups required
     `,
     popupP: `
-    Lorem Ipsum is simply dummy text of the printing 
+    AAA 111 - Lorem Ipsum is simply dummy text of the printing 
     and typesetting industry. Lorem Ipsum has been the 
     industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled 
@@ -45,7 +45,7 @@ const cardData = [
     reads; no accounts or sign-ups required
     `,
     popupP: `
-    Lorem Ipsum is simply dummy text of the printing 
+    BBB 222 - Lorem Ipsum is simply dummy text of the printing 
     and typesetting industry. Lorem Ipsum has been the 
     industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled 
@@ -73,7 +73,7 @@ const cardData = [
     reads; no accounts or sign-ups required
     `,
     popupP: `
-    Lorem Ipsum is simply dummy text of the printing 
+    CCC 333 - Lorem Ipsum is simply dummy text of the printing 
     and typesetting industry. Lorem Ipsum has been the 
     industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled 
@@ -101,7 +101,7 @@ const cardData = [
     reads; no accounts or sign-ups required
     `,
     popupP: `
-    Lorem Ipsum is simply dummy text of the printing 
+    DDD 444 - Lorem Ipsum is simply dummy text of the printing 
     and typesetting industry. Lorem Ipsum has been the 
     industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled 
@@ -132,7 +132,7 @@ function newPortfolioCard(card) {
       </ul>
       <p>${card.cardP}</p>
       <ul class='keyword'>
-        <li>html</li>
+        <li id="test-trigger-${card.cardId}">html</li>
         <li>css</li>
         <li>javaScript</li>
       </ul>
