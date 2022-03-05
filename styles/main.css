@@ -317,6 +317,11 @@ form p {
   font-weight: 400;
 }
 
+.cta-button-popup img {
+  height: 1.5rem;
+  width: auto;
+}
+
 .socials {
   color: #2e2eff;
   font-weight: 500;
@@ -507,11 +512,6 @@ form p {
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
-}
-
-.cta-button-popup img {
-  height: 1.5rem;
-  width: auto;
 }
 
 button {

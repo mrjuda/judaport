@@ -41,7 +41,8 @@ function newPopup(card) {
         </div>
       </div>
     </div>
-`;}
+`;
+}
 
 const popupBg = document.createElement('div');
 popupBg.classList.add('popup-bg', 'hide');
