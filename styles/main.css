@@ -1,3 +1,5 @@
+/* main.css */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 * {
@@ -76,8 +78,83 @@ form li {
   flex-direction: column;
 }
 
-.hide {
-  display: none;
+.popup-bg {
+  position: fixed;
+  margin-left: -2rem;
+  margin-top: -6rem;
+  width: 110%;
+  height: 110%;
+  background-color: rgba(229, 229, 229, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.popup-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.popup-card {
+  position: fixed;
+  display: flex;
+  overflow: auto;
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5% 5%;
+  z-index: 1;
+}
+
+.popup-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popup-x {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: 1.4rem;
+  color: #23a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  margin: 0.4rem 2rem;
+  cursor: pointer;
+}
+
+/*  CROP PICTURE HEIGHT INSIDE THE POPUP TO 50% VH */
+
+.popup-img-container {
+  display: flex;
+  flex-grow: initial;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+  height: 33vh;
+  background: #eee;
+  padding: 0.4rem 0.2rem;
+  border-radius: 8px;
+}
+
+.popup-img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+form p {
+  color: #ebebff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 ul {
@@ -93,6 +170,35 @@ details > ul {
 form ul {
   display: flex;
   flex-direction: column;
+}
+
+.popup-content p {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+.popup-content ul {
+  margin: 0.6rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.z-index-4 {
+  z-index: 4;
 }
 
 .menu-desktop ul {
@@ -157,7 +263,8 @@ header img {
 .main h1,
 .main h2,
 .portfolio h2,
-.about h2 {
+.about h2,
+.dynamics h2 {
   color: #000;
   font-size: 40px;
   line-height: 48px;
@@ -197,21 +304,19 @@ header img {
   }
 }
 
-form p {
-  color: #ebebff;
-  text-align: left;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
 .main p,
 .portfolio p,
+.dynamics p,
 .about p {
   color: #344563;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.cta-button-popup img {
+  height: 1.5rem;
+  width: auto;
 }
 
 .socials {
@@ -272,8 +377,13 @@ form p {
   padding-bottom: 50px;
 }
 
+.dynamics {
+  display: grid;
+}
+
 .card {
   display: flex;
+  justify-self: center;
   flex-direction: column;
   flex-basis: content;
   border-radius: 20px;
@@ -284,7 +394,8 @@ form p {
   padding: 8% 8%;
 }
 
-.portfolio .card img {
+.portfolio .card img,
+.dynamics .popup-card img {
   width: 100%;
 }
 
@@ -362,6 +473,39 @@ form p {
   line-height: 24px;
   font-weight: 400;
   cursor: pointer;
+}
+
+.popup-cta {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+.cta-button-popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0c3cb6;
+  border: 1px solid #0f27ff;
+  padding: 0.4rem 0.4rem;
+  width: 7.4rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.cta-button-popup:hover {
+  background-color: #0c3cb6;
+  color: #fff;
+}
+
+.cta-button-popup h2 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 button {
@@ -636,17 +780,15 @@ form .cta-button:hover {
 
   .card {
     display: flex;
+    flex-direction: row;
     padding: 1% 2%;
   }
 
   .card-img,
   .card-text {
+    width: 45%;
     padding: 4% 1%;
     margin: 0 0;
-  }
-
-  .card-img {
-    width: 100%;
   }
 
   #card1 {
@@ -663,6 +805,29 @@ form .cta-button:hover {
 
   #card4 {
     flex-direction: row-reverse;
+  }
+
+  .popup-bg {
+    margin-left: -8rem;
+    margin-top: -11rem;
+  }
+
+  .popup-container {
+    width: 90%;
+    justify-self: center;
+    margin-top: -11rem;
+  }
+
+  .popup-card {
+    justify-self: center;
+  }
+
+  .popup-img-container {
+    /* width: 80vw; */
+    height: 45vh;
+    background: #eee;
+    padding: 0.4rem 0.2rem;
+    border-radius: 8px;
   }
 
   .about {
@@ -721,6 +886,19 @@ form .cta-button:hover {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .popup-bottom {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .popup-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
   }
 
   .contact {

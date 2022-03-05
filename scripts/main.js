@@ -5,5 +5,7 @@ function loadJS(url) {
   document.body.appendChild(script);
 }
 
-loadJS('scripts/jtScript.js');
+// loadJS('scripts/jtScript.js');
 loadJS('scripts/mobileMenu.js');
+loadJS('scripts/dynamicCards.js');
+loadJS('scripts/popup.js');
