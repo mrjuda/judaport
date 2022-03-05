@@ -93,7 +93,7 @@ form li {
 .popup-container {
   display: flex;
   align-self: center;
-  justify-content: center;  
+  justify-content: center;
   z-index: 2;
 }
 
@@ -104,8 +104,6 @@ form li {
   width: 90%;
   height: 90%;
   flex-direction: column;
-  /* justify-self: center; */
-  /* background-color: rgba(200, 155, 250, 0.7); */
   background-color: #fff;
   border-radius: 20px;
   padding: 5% 5%;
@@ -124,7 +122,6 @@ form li {
   justify-content: end;
   font-size: 1.4rem;
   color: #23a;
-  font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   margin: 0.4rem 2rem;
@@ -158,6 +155,11 @@ form p {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 details > ul {
@@ -197,11 +199,6 @@ form ul {
 
 .z-index-4 {
   z-index: 4;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
 }
 
 .menu-desktop ul {
