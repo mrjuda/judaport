@@ -152,6 +152,24 @@ form li {
   height: auto;
 }
 
+form p {
+  color: #ebebff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .popup-content p {
   font-size: 0.75rem;
   line-height: 1.2rem;
@@ -184,16 +202,6 @@ form li {
 ul {
   padding: 0;
   list-style: none;
-}
-
-details > ul {
-  padding-bottom: 1rem;
-  margin-bottom: 0;
-}
-
-form ul {
-  display: flex;
-  flex-direction: column;
 }
 
 .menu-desktop ul {
@@ -299,14 +307,6 @@ header img {
   }
 }
 
-form p {
-  color: #ebebff;
-  text-align: left;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
 .main p,
 .portfolio p,
 .dynamics p,
@@ -382,9 +382,6 @@ form p {
 
 .dynamics {
   display: grid;
-  /* padding: 15px; */
-  /* padding-top: 50px; */
-  /* padding-bottom: 50px; */
 }
 
 .card {
@@ -823,9 +820,7 @@ form .cta-button:hover {
   .popup-container {
     width: 90%;
     justify-self: center;
-    /* align-items: center; */
     margin-top: -11rem;
-    /* margin-left: 0rem; */
   }
 
   .popup-card {
@@ -893,10 +888,6 @@ form .cta-button:hover {
   .popup-bottom {
     display: flex;
     gap: 2rem;
-  }
-
-  .popup-footer {
-
   }
 
   .popup-cta {

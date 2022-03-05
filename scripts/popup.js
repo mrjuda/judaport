@@ -1,6 +1,7 @@
 // popup.js
-
+const body2 = document.querySelector('body');
 const dynamics = document.querySelector('#Dynamics');
+import {cardData as cardData} from './dynamicCards.js';
 
 function newPopup(card) {
   return `
@@ -65,15 +66,15 @@ ctaCard1.addEventListener('click', () => {
   popupContainer.appendChild(popupCard);
   dynamics.appendChild(popupContainer);
   dynamics.appendChild(popupBg);
-  body.style.height = '100vh';
-  body.style.overflow = 'hidden';
+  body2.style.height = '100vh';
+  body2.style.overflow = 'hidden';
   popupContainer.classList.remove('hide');
   popupBg.classList.remove('hide');
   const popupX = document.querySelector('#popup-x');
   // X Close
   popupX.addEventListener('click', () => {
-    body.style.height = 'auto';
-    body.style.overflow = 'visible';
+    body2.style.height = 'auto';
+    body2.style.overflow = 'visible';
     popupContainer.classList.add('hide');
     popupBg.classList.add('hide');
   });
@@ -86,15 +87,15 @@ ctaCard2.addEventListener('click', () => {
   popupContainer.appendChild(popupCard);
   dynamics.appendChild(popupContainer);
   dynamics.appendChild(popupBg);
-  body.style.height = '100vh';
-  body.style.overflow = 'hidden';
+  body2.style.height = '100vh';
+  body2.style.overflow = 'hidden';
   popupContainer.classList.remove('hide');
   popupBg.classList.remove('hide');
   const popupX = document.querySelector('#popup-x');
   // X close
   popupX.addEventListener('click', () => {
-    body.style.height = 'auto';
-    body.style.overflow = 'visible';
+    body2.style.height = 'auto';
+    body2.style.overflow = 'visible';
     popupContainer.classList.add('hide');
     popupBg.classList.add('hide');
   });
@@ -107,15 +108,15 @@ ctaCard3.addEventListener('click', () => {
   popupContainer.appendChild(popupCard);
   dynamics.appendChild(popupContainer);
   dynamics.appendChild(popupBg);
-  body.style.height = '100vh';
-  body.style.overflow = 'hidden';
+  body2.style.height = '100vh';
+  body2.style.overflow = 'hidden';
   popupContainer.classList.remove('hide');
   popupBg.classList.remove('hide');
   const popupX = document.querySelector('#popup-x');
   // X close
   popupX.addEventListener('click', () => {
-    body.style.height = 'auto';
-    body.style.overflow = 'visible';
+    body2.style.height = 'auto';
+    body2.style.overflow = 'visible';
     popupContainer.classList.add('hide');
     popupBg.classList.add('hide');
   });
@@ -128,15 +129,15 @@ ctaCard4.addEventListener('click', () => {
   popupContainer.appendChild(popupCard);
   dynamics.appendChild(popupContainer);
   dynamics.appendChild(popupBg);
-  body.style.height = '100vh';
-  body.style.overflow = 'hidden';
+  body2.style.height = '100vh';
+  body2.style.overflow = 'hidden';
   popupContainer.classList.remove('hide');
   popupBg.classList.remove('hide');
   const popupX = document.querySelector('#popup-x');
   // X close
   popupX.addEventListener('click', () => {
-    body.style.height = 'auto';
-    body.style.overflow = 'visible';
+    body2.style.height = 'auto';
+    body2.style.overflow = 'visible';
     popupContainer.classList.add('hide');
     popupBg.classList.add('hide');
   });
