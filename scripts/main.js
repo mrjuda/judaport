@@ -30,3 +30,34 @@ form.addEventListener('submit', (e) => {
 });
 
 // Preserve data in the browser
+
+const saveUserData = {};
+
+function userDataSet(info) {
+  const userChar = JSON.stringify(info);
+  window.localStorage.setItem('formData', userChar);
+}
+
+document.querySelector('.form').addEventListener('change', () => {
+  const userData = document.querySelectorAll('input');
+  const textInput = document.querySelector('textarea');
+  userData.forEach((userInput) => {
+    saveUserData[userInput.id] = userInput.value;
+  });
+  saveUserData[textInput.id] = textInput.value;
+  userDataSet(saveUserData);
+});
+
+function restoreData(saveUserData) {
+  Object.entries(saveUserData).forEach((formElement) => {
+    const [key, value] = formElement;
+    document.getElementById(key).value = value;
+  });
+}
+
+window.addEventListener('load', () => {
+  const userObject = JSON.parse(window.localStorage.getItem('formData'));
+  if (userObject) {
+    restoreData(userObject);
+  }
+});
