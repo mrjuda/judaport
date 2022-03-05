@@ -780,17 +780,15 @@ form .cta-button:hover {
 
   .card {
     display: flex;
+    flex-direction: row;
     padding: 1% 2%;
   }
 
   .card-img,
   .card-text {
+    width: 45%;
     padding: 4% 1%;
     margin: 0 0;
-  }
-
-  .card-img {
-    width: 100%;
   }
 
   #card1 {
