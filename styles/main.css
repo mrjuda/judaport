@@ -136,7 +136,7 @@ form li {
   justify-content: center;
   align-content: center;
   width: 80vw;
-  height: 30vh;
+  height: 33vh;
   background: #eee;
   padding: 0.4rem 0.2rem;
   border-radius: 8px;
@@ -822,6 +822,14 @@ form .cta-button:hover {
 
   .popup-card {
     justify-self: center;
+  }
+
+  .popup-img-container {
+    /* width: 80vw; */
+    height: 45vh;
+    background: #eee;
+    padding: 0.4rem 0.2rem;
+    border-radius: 8px;
   }
 
   .about {
