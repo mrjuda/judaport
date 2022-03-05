@@ -28,3 +28,5 @@ form.addEventListener('submit', (e) => {
     invalid.textContent = '';
   }
 });
+
+// Preserve data in the browser
