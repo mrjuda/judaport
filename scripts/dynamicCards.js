@@ -117,7 +117,7 @@ const cardData = [
 
 function newPortfolioCard(card) {
   return `
-<div id='${card.cardId}'>
+<div class="card" id='${card.cardId}'>
   <div class='card-img'>
     <img src='${card.imgSrc}' alt='${card.imgAlt}'>
   </div>
