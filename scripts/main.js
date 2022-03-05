@@ -10,6 +10,9 @@ loadJS('scripts/mobileMenu.js');
 loadJS('scripts/dynamicCards.js');
 loadJS('scripts/popup.js');
 
+
+// Email validation
+
 const form = document.querySelector('#contact-form');
 const email = document.querySelector('#mail');
 const invalid = document.querySelector('#invalid');
