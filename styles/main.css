@@ -50,19 +50,6 @@ header a {
   margin: 0.4rem 2rem;
 }
 
-.popup-x {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  font-size: 1.4rem;
-  color: #23a;
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
-  margin: 0.4rem 2rem;
-  cursor: pointer;
-}
-
 form li {
   margin: 5px 0;
 }
@@ -104,13 +91,74 @@ form li {
 }
 
 .popup-container {
-  /* padding-right: 1rem; */
   display: flex;
   align-self: center;
-  width: 100%;
-  height: 100%;
+  justify-content: center;  
   z-index: 2;
+}
+
+.popup-card {
+  position: fixed;
+  display: flex;
+  overflow: auto;
+  width: 90%;
+  height: 90%;
   flex-direction: column;
+  /* justify-self: center; */
+  /* background-color: rgba(200, 155, 250, 0.7); */
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5% 5%;
+  z-index: 1;
+}
+
+.popup-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popup-x {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: 1.4rem;
+  color: #23a;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  margin: 0.4rem 2rem;
+  cursor: pointer;
+}
+
+/*  CROP PICTURE HEIGHT INSIDE THE POPUP TO 50% VH */
+
+.popup-img-container {
+  display: flex;
+  flex-grow: initial;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+  height: 30vh;
+  background: #eee;
+  padding: 0.4rem 0.2rem;
+  border-radius: 8px;
+}
+
+.popup-img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.popup-content p {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+.popup-content ul {
+  margin: 0.6rem 0;
 }
 
 .hide {
@@ -210,7 +258,8 @@ header img {
 .main h1,
 .main h2,
 .portfolio h2,
-.about h2 {
+.about h2,
+.dynamics h2 {
   color: #000;
   font-size: 40px;
   line-height: 48px;
@@ -260,6 +309,7 @@ form p {
 
 .main p,
 .portfolio p,
+.dynamics p,
 .about p {
   color: #344563;
   font-size: 16px;
@@ -325,6 +375,13 @@ form p {
   padding-bottom: 50px;
 }
 
+.dynamics {
+  display: grid;
+  /* padding: 15px; */
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+}
+
 .card {
   display: flex;
   justify-self: center;
@@ -338,20 +395,8 @@ form p {
   padding: 8% 8%;
 }
 
-.popup-card {
-  display: flex;
-  justify-self: center;
-  flex-direction: column;
-  flex-basis: content;
-  border-radius: 20px;
-  background: #fff;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 8% 8%;
-}
-
-.portfolio .card img {
+.portfolio .card img,
+.dynamics .popup-card img {
   width: 100%;
 }
 
@@ -429,6 +474,44 @@ form p {
   line-height: 24px;
   font-weight: 400;
   cursor: pointer;
+}
+
+.popup-cta {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+.cta-button-popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0c3cb6;
+  border: 1px solid #0f27ff;
+  padding: 0.4rem 0.4rem;
+  width: 7.4rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.cta-button-popup:hover {
+  background-color: #0c3cb6;
+  color: #fff;
+}
+
+.cta-button-popup h2 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.cta-button-popup img {
+  height: 1.5rem;
+  width: auto;
 }
 
 button {
@@ -738,7 +821,15 @@ form .cta-button:hover {
   }
 
   .popup-container {
-    width: 100%;
+    width: 90%;
+    justify-self: center;
+    /* align-items: center; */
+    margin-top: -11rem;
+    /* margin-left: 0rem; */
+  }
+
+  .popup-card {
+    justify-self: center;
   }
 
   .about {
@@ -797,6 +888,23 @@ form .cta-button:hover {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .popup-bottom {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .popup-footer {
+
+  }
+
+  .popup-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.6rem;
   }
 
   .contact {

@@ -2,76 +2,93 @@
 
 // 1 - Select the section 'Dynamics'
 // (...) index.html >> section class='dynamics' / id='Dynamics'
-// 2 - Apply class 'portfolio' to the section 'dynamics'
-// (...) so it assumes the appearance of the outer card box
 const dynamics = document.querySelector('#Dynamics');
-dynamics.className = 'portfolio';
-// dynamics.className = 'hide';
 
-// 1 - Create a element (div) INSIDE the the dynamics box
-// 2 - Apply class 'card' so it assumes the card apearance
-// 3 - Create the CardBox content: h2 title + button
-const cardBox = document.createElement('div');
-cardBox.className = 'card';
-const cardH2 = document.createElement('h2'); // h2
-cardH2.textContent = 'This is a CardBox';
-const callModal = document.createElement('button'); // button
-callModal.classList.add('cta-button');
-callModal.textContent = 'OPEN MODAL 1';
+function newPopup(card) {
+  return `
+  <div id="popup-card">
+    <div class="popup-header">
+      <h2>${cardData[card].project}</h2>
+      <div class="popup-x" id="popup-x">X</div>
+    </div>
+    <div class="popup-box">
+      <ul class="categories">
+        <li class="canopy">${cardData[card].company}</li>
+        <li>•</li>
+        <li>${cardData[card].position}</li>
+        <li>•</li>
+        <li>${cardData[card].year}</li>
+      </ul>
+      <div class="popup-img-container">
+      <img class="popup-img" src="${cardData[card].imgSrc}" alt="${cardData[card].imgAlt}">
+      </div>
+      <div class="popup-bottom">
+        <p>${cardData[card].popupP}</p> 
+        <div class="popup-footer">
+          <ul class="keyword">
+            <li>html</li>
+            <li>css</li>
+            <li id="javinha">javaScript</li>
+          </ul>
+          <div class="gray-dash"> <!--gray line splitting contents--> </div>
+          <div class="popup-cta">
+            <div class="cta-button-popup">
+              See Live
+              <img src="icons/export-blue.svg" alt="">
+            </div>
+            <div class="cta-button-popup">
+              See Source
+              <img src="icons/github-blue.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+`;}
 
-// 1 - Append h2 and the button to the div 'card'
-// 2 - Append the 'card' div to the section 'dynamics'
-cardBox.appendChild(cardH2);
-cardBox.appendChild(callModal);
-dynamics.appendChild(cardBox);
+const popupBox = document.createElement('div');
+popupBox.className = 'popup-card';
 
-// const popupBg = document.querySelector('.popup-bg');
-// const popupContainer = document.querySelector('.popup-container');
-// const popupX = document.querySelector('.popup-x');
-
-// 1 - Create popupBg, popupContainer, popupCard and its content
-// 2 - Apply the proper classes
-// 3 - Append one to another
-// 4 - Append evrything to the dynamics section
 const popupBg = document.createElement('div');
 popupBg.classList.add('popup-bg', 'hide');
+
 const popupContainer = document.createElement('div');
 popupContainer.classList.add('popup-container', 'hide');
+
 const popupCard = document.createElement('div');
 popupCard.classList.add('popup-card');
-const popupX = document.createElement('a');
-popupX.textContent = 'X';
-popupX.classList.add('popup-x', 'hide');
-const popupH2 = document.createElement('h2');
-popupH2.textContent = 'This is a PopupBox 2';
 
-// 1 - Append h2 and the button to the div 'card'
-// 2 - Append the 'card' div to the section 'dynamics'
-popupCard.appendChild(popupX);
-popupCard.appendChild(popupH2);
-popupContainer.appendChild(popupCard);
-dynamics.appendChild(popupBg);
+const cardDataKeyTest = 1;
+popupBox.innerHTML = newPopup(cardDataKeyTest);
+// popupBox.append(newPopup(cardDataKeyTest));
+popupContainer.appendChild(popupBox);
 dynamics.appendChild(popupContainer);
+dynamics.appendChild(popupBg);
+const popupX =  document.querySelector('#popup-x');
+// const popupTest = generatePop(1);
 
-callModal.addEventListener('click', () => {
+// dynamics.appendChild(popupTest);
+
+const ctaCard1 = document.querySelector('#cta-card1');
+const ctaCard2 = document.querySelector('#cta-card2');
+const ctaCard3 = document.querySelector('#cta-card3');
+const ctaCard4 = document.querySelector('#cta-card4');
+
+ctaCard1.addEventListener('click', () => {
   body.style.height = '100vh';
   body.style.overflow = 'hidden';
   popupContainer.style.display = 'flex';
   popupBg.className = 'popup-bg';
-  cardBox.classList.add = 'z-index-1';
-  popupBg.classList.add = 'z-index-2';
-  popupContainer.classList.add = 'z-index-3';
   popupX.style.display = 'flex';
+  // cardBox.className = 'hide';
 });
 
 popupX.addEventListener('click', () => {
-  dynamics.className = 'portfolio';
+  dynamics.className = 'dynamics';
   body.style.height = 'auto';
   body.style.overflow = 'visible';
   popupContainer.style.display = 'none';
-  menuHamb.style.display = 'flex';
-  popupX.style.display = 'none';
   popupBg.className = 'hide';
+  popupX.style.display = 'none';
 });
-
-
