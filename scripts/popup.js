@@ -187,7 +187,7 @@ ctaCard1.addEventListener('click', () => {
   popupBg.classList.remove('hide');
   const popupX = document.querySelector('#popup-x');
   // X Close
-  popupX.addEventListener('click', () => {
+  popupX.addEventListener('click', () => {{
     body2.style.height = 'auto';
     body2.style.overflow = 'visible';
     popupContainer.classList.add('hide');
