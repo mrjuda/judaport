@@ -10,13 +10,18 @@ loadJS('scripts/mobileMenu.js');
 loadJS('scripts/dynamicCards.js');
 loadJS('scripts/popup.js');
 
-const email = document.getElementById("mail");
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#mail');
+const invalid = document.querySelector('#invalid');
 
-email.addEventListener("input", function (event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I am expecting an e-mail address!");
-    email.reportValidity();
+form.addEventListener('submit', (e) => {
+  const Emailtext = email.value;
+  if (Emailtext !== Emailtext.toLowerCase()) {
+    e.preventDefault();
+    invalid.style.color = 'red';
+    invalid.style.gridColumn = '2/3';
+    invalid.textContent = 'Please Enter your Email in Lowercase';
   } else {
-    email.setCustomValidity("");
+    invalid.textContent = '';
   }
 });
