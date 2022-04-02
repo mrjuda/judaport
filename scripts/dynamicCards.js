@@ -7,23 +7,21 @@ const cardData = [
     popupId: 'popup1',
     popupX: 'close-popup-1',
     imgSrc: 'images/pic1.png',
-    imgAlt: 'Tonic sneakpeak',
-    project: 'Tonic',
-    company: 'CANOPY',
-    position: 'Back End Dev',
+    imgAlt: 'EMC 2022 sneakpeak',
+    project: 'EMC 2022',
+    company: 'EDM Marketing',
+    position: 'Front End Dev',
     year: '2014',
     cardP: `
-    A daily selection of privately personalized 
-    reads; no accounts or sign-ups required
+    A home for EMC 2022's attendees with all 
+    information related to the event
     `,
     popupP: `
-    AAA 111 - Lorem Ipsum is simply dummy text of the printing 
-    and typesetting industry. Lorem Ipsum has been the 
-    industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled 
-    it to make a type specimen book. It has survived not 
-    only five centuries, but also the leap into electronic 
-    typesetting, remaining essent
+    This project is intended to show EMC 2022's attendees 
+    all information related to the EMC 2022. The Electronic 
+    Dance Music Marketing Conference gathers electronic 
+    music and event producers from all around the world since 
+    1992. This year, it will be held in Natal, Brazil.
     `,
     cardCtaBtn: 'cta-card1',
     demoSrc: '#',
