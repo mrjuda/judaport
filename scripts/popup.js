@@ -91,27 +91,25 @@ const cardData2 = [
     popupId: 'popup4',
     popupX: 'close-popup-4',
     imgSrc: 'images/pic4.png',
-    imgAlt: 'Uber Navigation Sneakpeak',
-    project: 'Uber Navigation',
-    company: 'Uber',
+    imgAlt: 'Bootstrap demo Sneakpeak',
+    project: 'Bootstrap demo',
+    company: 'BSP International',
     position: 'Lead Developer',
     year: '2019',
     cardP: `
-    A daily selection of privately personalized 
-    reads; no accounts or sign-ups required
+    A bootstrap functionalities live demo. 
     `,
     popupP: `
-    DDD 444 - Lorem Ipsum is simply dummy text of the printing 
-    and typesetting industry. Lorem Ipsum has been the 
-    industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled 
-    it to make a type specimen book. It has survived not 
-    only five centuries, but also the leap into electronic 
-    typesetting, remaining essent
+    This is a bootstrap Portfolio project, made as part of 
+    the Microverse Program. Made with Ubuntu 20.04 + 
+    VS Code 1.64.2 + a lot of imagination and hard work. 
+    Teamwork was also an essential tool to make things 
+    happen, so thank you to all my coding partners who 
+    worked with me so far.
     `,
     cardCtaBtn: 'cta-card4',
-    demoSrc: '#',
-    githubSrc: '#',
+    demoSrc: 'https://mrjuda.github.io/judaportbootstrap/',
+    githubSrc: 'https://github.com/mrjuda/judaportbootstrap',
   },
 ];
 
