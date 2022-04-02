@@ -8,27 +8,25 @@ const cardData2 = [
     popupId: 'popup1',
     popupX: 'close-popup-1',
     imgSrc: 'images/pic1.png',
-    imgAlt: 'Tonic sneakpeak',
-    project: 'Tonic',
-    company: 'CANOPY',
-    position: 'Back End Dev',
-    year: '2014',
+    imgAlt: 'EMC 2022 sneakpeak',
+    project: 'EMC 2022',
+    company: 'EDM Marketing',
+    position: 'Front End Dev',
+    year: '2022',
     cardP: `
-    A daily selection of privately personalized 
-    reads; no accounts or sign-ups required
+    A home for EMC 2022's attendees with all 
+    information related to the event
     `,
     popupP: `
-    AAA 111 - Lorem Ipsum is simply dummy text of the printing 
-    and typesetting industry. Lorem Ipsum has been the 
-    industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled 
-    it to make a type specimen book. It has survived not 
-    only five centuries, but also the leap into electronic 
-    typesetting, remaining essent
+    This project is intended to show EMC 2022's attendees 
+    all information related to the EMC 2022. The Electronic 
+    Dance Music Marketing Conference gathers electronic 
+    music and event producers from all around the world since 
+    1992. This year, it will be held in Natal, Brazil.
     `,
     cardCtaBtn: 'cta-card1',
-    demoSrc: '#',
-    githubSrc: '#',
+    demoSrc: 'https://mrjuda.github.io/emc-2022/',
+    githubSrc: 'https://github.com/mrjuda/emc-2022',
   },
   {
     // CARD 2 //
@@ -145,14 +143,14 @@ function newPopup(card) {
           </ul>
           <div class="gray-dash"> <!--gray line splitting contents--> </div>
           <div class="popup-cta">
-            <div class="cta-button-popup">
+            <a href="${cardData2[card].demoSrc}"><div class="cta-button-popup">
               See Live
               <img src="icons/export-blue.svg" alt="">
-            </div>
-            <div class="cta-button-popup">
+            </div></a>
+            <a href="${cardData2[card].githubSrc}"><div class="cta-button-popup">
               See Source
               <img src="icons/github-blue.svg" alt="">
-            </div>
+            </div></a>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const cardData = [
     project: 'EMC 2022',
     company: 'EDM Marketing',
     position: 'Front End Dev',
-    year: '2014',
+    year: '2022',
     cardP: `
     A home for EMC 2022's attendees with all 
     information related to the event
