@@ -34,27 +34,28 @@ const cardData2 = [
     popupId: 'popup2',
     popupX: 'close-popup-2',
     imgSrc: 'images/pic2.png',
-    imgAlt: 'Multi-Post Stories sneakpeak',
-    project: 'Multi-Post Stories',
-    company: 'Facebook',
+    imgAlt: 'Awesome books sneakpeak',
+    project: 'Awesome Books',
+    company: 'ABks Inc',
     position: 'Full Stack Dev',
-    year: '2016',
+    year: '2022',
     cardP: `
-    A daily selection of privately personalized 
-    reads; no accounts or sign-ups required
+    A simple library management system. Its 
+    purpose is to show ES6 functionalities, 
+    especially JS modules.
     `,
     popupP: `
-    BBB 222 - Lorem Ipsum is simply dummy text of the printing 
-    and typesetting industry. Lorem Ipsum has been the 
-    industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled 
-    it to make a type specimen book. It has survived not 
-    only five centuries, but also the leap into electronic 
-    typesetting, remaining essent
+    This project is a simple library management system. 
+    Its purpose is to show ES6 functionalities, especially 
+    JS modules. It was built in an Ubuntu 20.04 + VS Code 
+    1.65.2 environment + a lot of imagination and hard 
+    work. Teamwork was also an essential tool to make 
+    things happen, so thank you to all my coding partners 
+    who worked with me so far.
     `,
     cardCtaBtn: 'cta-card2',
-    demoSrc: '#',
-    githubSrc: '#',
+    demoSrc: 'https://mrjuda.github.io/books-es6/',
+    githubSrc: 'https://github.com/mrjuda/books-es6',
   },
   {
     // CARD 3 //
