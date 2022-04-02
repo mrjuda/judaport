@@ -62,27 +62,27 @@ const cardData = [
     popupId: 'popup3',
     popupX: 'close-popup-3',
     imgSrc: 'images/pic3.png',
-    imgAlt: 'Facebook 360 Sneakpeak',
-    project: 'Facebook 360',
-    company: 'Facebook',
-    position: 'Full Stack Dev',
-    year: '2017',
+    imgAlt: 'To-do list Sneakpeak',
+    project: 'To-do List',
+    company: 'TDL International',
+    position: 'Front end Dev',
+    year: '2021',
     cardP: `
-    A daily selection of privately personalized 
-    reads; no accounts or sign-ups required
+    A minimalist version of a To-do List website. 
+    
     `,
     popupP: `
-    CCC 333 - Lorem Ipsum is simply dummy text of the printing 
-    and typesetting industry. Lorem Ipsum has been the 
-    industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled 
-    it to make a type specimen book. It has survived not 
-    only five centuries, but also the leap into electronic 
-    typesetting, remaining essent
+    This is a minimalist version of a To-do List website. 
+    Its purpose is to show ES6 functionalities, especially 
+    JS modules. It was built in an Ubuntu 20.04 + VS Code 
+    1.65.2 environment + a lot of imagination and hard 
+    work. Teamwork was also an essential tool to make 
+    things happen, so thank you to all my coding partners 
+    who worked with me so far. 
     `,
     cardCtaBtn: 'cta-card3',
-    demoSrc: '#',
-    githubSrc: '#',
+    demoSrc: 'https://mrjuda.github.io/to-do-list/',
+    githubSrc: 'https://github.com/mrjuda/to-do-list',
   },
   {
     // CARD 4 //
